@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    list-style: none;
+    font-family: 'Poppins';
+    text-decoration: none;
+}
+
+
+.sec1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #042940;
+}
+
+
+
+.navbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar a  {
+    color: #FD0;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+
+.navbar .navlinks ul {
+    display: flex; 
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.299);
+    backdrop-filter: blur(5px);
+    filter: blur(1);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-links li :hover {
+   color: blue;
+}
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar .menu-hamburger {
+    width: 35px;
+    z-index: 90999999;
+}
+
+.navbar .nav-links ul li {
+    margin: 25px 0;
+}
+
+.navbar .nav-links  li {
+    font-size: 1.6em;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.carousel {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
